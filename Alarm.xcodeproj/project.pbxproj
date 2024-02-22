@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073865A641FDE7E539B29372 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C175FBAC2B8A77AAB22B50BA /* Pods_Alarm.framework */; };
+		2A3BB2C32B2AFBBB001765E4 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3BB2C22B2AFBBA001765E4 /* Scheduler.swift */; };
+		2A3BB2C82B2EE158001765E4 /* MediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3BB2C72B2EE158001765E4 /* MediaVC.swift */; };
+		2A3BB2CA2B2EE31B001765E4 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3BB2C92B2EE31B001765E4 /* CategoryCell.swift */; };
+		2A3BB2D02B3015FC001765E4 /* Happyday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2CB2B3015FC001765E4 /* Happyday.mp3 */; };
+		2A3BB2D12B3015FC001765E4 /* Auratone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2CC2B3015FC001765E4 /* Auratone.mp3 */; };
+		2A3BB2D22B3015FC001765E4 /* Ping1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2CD2B3015FC001765E4 /* Ping1.mp3 */; };
+		2A3BB2D32B3015FC001765E4 /* Ping2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2CE2B3015FC001765E4 /* Ping2.mp3 */; };
+		2A3BB2D42B3015FC001765E4 /* Softchime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2CF2B3015FC001765E4 /* Softchime.mp3 */; };
+		2A3BB2D72B30160C001765E4 /* Freshstart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2D52B30160C001765E4 /* Freshstart.mp3 */; };
+		2A3BB2D82B30160C001765E4 /* MorningBirds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2D62B30160C001765E4 /* MorningBirds.mp3 */; };
+		2A3BB2DC2B30162C001765E4 /* SlowMorning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2D92B30162C001765E4 /* SlowMorning.mp3 */; };
+		2A3BB2DD2B30162C001765E4 /* EarlyRiser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2DA2B30162C001765E4 /* EarlyRiser.mp3 */; };
+		2A3BB2DE2B30162C001765E4 /* Daybreak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A3BB2DB2B30162C001765E4 /* Daybreak.mp3 */; };
+		2A3BB2E12B30174B001765E4 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3BB2E02B30174B001765E4 /* Global.swift */; };
+		2A3BB2E32B31B519001765E4 /* RecorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3BB2E22B31B519001765E4 /* RecorderVC.swift */; };
+		2A3BB2E52B32E24D001765E4 /* RecordingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3BB2E42B32E24D001765E4 /* RecordingsCell.swift */; };
+		2A8263862B21DB9300DCEC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263852B21DB9300DCEC30 /* AppDelegate.swift */; };
+		2A82638A2B21DB9300DCEC30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263892B21DB9300DCEC30 /* ViewController.swift */; };
+		2A82638D2B21DB9300DCEC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A82638B2B21DB9300DCEC30 /* Main.storyboard */; };
+		2A82638F2B21DB9500DCEC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A82638E2B21DB9500DCEC30 /* Assets.xcassets */; };
+		2A8263922B21DB9500DCEC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8263902B21DB9500DCEC30 /* LaunchScreen.storyboard */; };
+		2A82639A2B22EC2B00DCEC30 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263992B22EC2B00DCEC30 /* AlarmListCell.swift */; };
+		2A82639D2B23132F00DCEC30 /* AlarmList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A82639B2B23132F00DCEC30 /* AlarmList.xcdatamodeld */; };
+		2A82639F2B2315DD00DCEC30 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A82639E2B2315DD00DCEC30 /* CoreDataStack.swift */; };
+		2A8263A12B23161800DCEC30 /* AlarmList+coredata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263A02B23161800DCEC30 /* AlarmList+coredata.swift */; };
+		2A8263A32B23165D00DCEC30 /* AlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263A22B23165D00DCEC30 /* AlarmList.swift */; };
+		2A8263A52B2330C100DCEC30 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263A42B2330C100DCEC30 /* Extension.swift */; };
+		2A8263A72B233A1700DCEC30 /* AlarmAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263A62B233A1700DCEC30 /* AlarmAddEditVC.swift */; };
+		2A8263A92B245A1800DCEC30 /* WeekdaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263A82B245A1800DCEC30 /* WeekdaysViewController.swift */; };
+		2A8263AB2B26E27F00DCEC30 /* LabelEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263AA2B26E27F00DCEC30 /* LabelEditVC.swift */; };
+		2A8263AD2B26E65100DCEC30 /* AlarmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8263AC2B26E65100DCEC30 /* AlarmInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BF9A708A22F7D81BC3E3DD4 /* Pods-Alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.debug.xcconfig"; path = "Target Support Files/Pods-Alarm/Pods-Alarm.debug.xcconfig"; sourceTree = "<group>"; };
+		2A3BB2C22B2AFBBA001765E4 /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		2A3BB2C72B2EE158001765E4 /* MediaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaVC.swift; sourceTree = "<group>"; };
+		2A3BB2C92B2EE31B001765E4 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		2A3BB2CB2B3015FC001765E4 /* Happyday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Happyday.mp3; sourceTree = "<group>"; };
+		2A3BB2CC2B3015FC001765E4 /* Auratone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Auratone.mp3; sourceTree = "<group>"; };
+		2A3BB2CD2B3015FC001765E4 /* Ping1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ping1.mp3; sourceTree = "<group>"; };
+		2A3BB2CE2B3015FC001765E4 /* Ping2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ping2.mp3; sourceTree = "<group>"; };
+		2A3BB2CF2B3015FC001765E4 /* Softchime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Softchime.mp3; sourceTree = "<group>"; };
+		2A3BB2D52B30160C001765E4 /* Freshstart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Freshstart.mp3; sourceTree = "<group>"; };
+		2A3BB2D62B30160C001765E4 /* MorningBirds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MorningBirds.mp3; sourceTree = "<group>"; };
+		2A3BB2D92B30162C001765E4 /* SlowMorning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SlowMorning.mp3; sourceTree = "<group>"; };
+		2A3BB2DA2B30162C001765E4 /* EarlyRiser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EarlyRiser.mp3; sourceTree = "<group>"; };
+		2A3BB2DB2B30162C001765E4 /* Daybreak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Daybreak.mp3; sourceTree = "<group>"; };
+		2A3BB2E02B30174B001765E4 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		2A3BB2E22B31B519001765E4 /* RecorderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderVC.swift; sourceTree = "<group>"; };
+		2A3BB2E42B32E24D001765E4 /* RecordingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsCell.swift; sourceTree = "<group>"; };
+		2A8263822B21DB9300DCEC30 /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A8263852B21DB9300DCEC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A8263892B21DB9300DCEC30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A82638C2B21DB9300DCEC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A82638E2B21DB9500DCEC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A8263912B21DB9500DCEC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A8263932B21DB9500DCEC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8263992B22EC2B00DCEC30 /* AlarmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
+		2A82639C2B23132F00DCEC30 /* AlarmList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmList.xcdatamodel; sourceTree = "<group>"; };
+		2A82639E2B2315DD00DCEC30 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2A8263A02B23161800DCEC30 /* AlarmList+coredata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmList+coredata.swift"; sourceTree = "<group>"; };
+		2A8263A22B23165D00DCEC30 /* AlarmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
+		2A8263A42B2330C100DCEC30 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2A8263A62B233A1700DCEC30 /* AlarmAddEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAddEditVC.swift; sourceTree = "<group>"; };
+		2A8263A82B245A1800DCEC30 /* WeekdaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdaysViewController.swift; sourceTree = "<group>"; };
+		2A8263AA2B26E27F00DCEC30 /* LabelEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelEditVC.swift; sourceTree = "<group>"; };
+		2A8263AC2B26E65100DCEC30 /* AlarmInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmInfo.swift; sourceTree = "<group>"; };
+		C175FBAC2B8A77AAB22B50BA /* Pods_Alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB91CDA0D7ADF65645F814E7 /* Pods-Alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.release.xcconfig"; path = "Target Support Files/Pods-Alarm/Pods-Alarm.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A82637F2B21DB9300DCEC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073865A641FDE7E539B29372 /* Pods_Alarm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A3BB2BF2B2839E0001765E4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A8263892B21DB9300DCEC30 /* ViewController.swift */,
+				2A8263A62B233A1700DCEC30 /* AlarmAddEditVC.swift */,
+				2A8263A82B245A1800DCEC30 /* WeekdaysViewController.swift */,
+				2A8263AA2B26E27F00DCEC30 /* LabelEditVC.swift */,
+				2A3BB2C72B2EE158001765E4 /* MediaVC.swift */,
+				2A3BB2E22B31B519001765E4 /* RecorderVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A3BB2C02B283A31001765E4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2A82639E2B2315DD00DCEC30 /* CoreDataStack.swift */,
+				2A8263A02B23161800DCEC30 /* AlarmList+coredata.swift */,
+				2A8263A22B23165D00DCEC30 /* AlarmList.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2A3BB2C12B283A42001765E4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2A8263992B22EC2B00DCEC30 /* AlarmListCell.swift */,
+				2A3BB2C92B2EE31B001765E4 /* CategoryCell.swift */,
+				2A3BB2E42B32E24D001765E4 /* RecordingsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2A3BB2DF2B301660001765E4 /* RingTones */ = {
+			isa = PBXGroup;
+			children = (
+				2A3BB2CC2B3015FC001765E4 /* Auratone.mp3 */,
+				2A3BB2CB2B3015FC001765E4 /* Happyday.mp3 */,
+				2A3BB2CD2B3015FC001765E4 /* Ping1.mp3 */,
+				2A3BB2CE2B3015FC001765E4 /* Ping2.mp3 */,
+				2A3BB2CF2B3015FC001765E4 /* Softchime.mp3 */,
+				2A3BB2D52B30160C001765E4 /* Freshstart.mp3 */,
+				2A3BB2D62B30160C001765E4 /* MorningBirds.mp3 */,
+				2A3BB2DB2B30162C001765E4 /* Daybreak.mp3 */,
+				2A3BB2DA2B30162C001765E4 /* EarlyRiser.mp3 */,
+				2A3BB2D92B30162C001765E4 /* SlowMorning.mp3 */,
+			);
+			path = RingTones;
+			sourceTree = "<group>";
+		};
+		2A8263792B21DB9300DCEC30 = {
+			isa = PBXGroup;
+			children = (
+				2A8263842B21DB9300DCEC30 /* Alarm */,
+				2A8263832B21DB9300DCEC30 /* Products */,
+				DC3DDD31E40C1DB4190824D7 /* Pods */,
+				AEA09CE0059229AEF08E45BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A8263832B21DB9300DCEC30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A8263822B21DB9300DCEC30 /* Alarm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A8263842B21DB9300DCEC30 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				2A82639B2B23132F00DCEC30 /* AlarmList.xcdatamodeld */,
+				2A8263852B21DB9300DCEC30 /* AppDelegate.swift */,
+				2A82638B2B21DB9300DCEC30 /* Main.storyboard */,
+				2A82638E2B21DB9500DCEC30 /* Assets.xcassets */,
+				2A8263902B21DB9500DCEC30 /* LaunchScreen.storyboard */,
+				2A8263932B21DB9500DCEC30 /* Info.plist */,
+				2A3BB2DF2B301660001765E4 /* RingTones */,
+				2A3BB2BF2B2839E0001765E4 /* ViewControllers */,
+				2A3BB2C12B283A42001765E4 /* Cells */,
+				2A3BB2C02B283A31001765E4 /* CoreData */,
+				2A8263A42B2330C100DCEC30 /* Extension.swift */,
+				2A8263AC2B26E65100DCEC30 /* AlarmInfo.swift */,
+				2A3BB2C22B2AFBBA001765E4 /* Scheduler.swift */,
+				2A3BB2E02B30174B001765E4 /* Global.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		AEA09CE0059229AEF08E45BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C175FBAC2B8A77AAB22B50BA /* Pods_Alarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC3DDD31E40C1DB4190824D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BF9A708A22F7D81BC3E3DD4 /* Pods-Alarm.debug.xcconfig */,
+				EB91CDA0D7ADF65645F814E7 /* Pods-Alarm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A8263812B21DB9300DCEC30 /* Alarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A8263962B21DB9500DCEC30 /* Build configuration list for PBXNativeTarget "Alarm" */;
+			buildPhases = (
+				014CD58824DD81496630DD5E /* [CP] Check Pods Manifest.lock */,
+				2A82637E2B21DB9300DCEC30 /* Sources */,
+				2A82637F2B21DB9300DCEC30 /* Frameworks */,
+				2A8263802B21DB9300DCEC30 /* Resources */,
+				8399F2BB77FD72BFAACFE740 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alarm;
+			productName = Alarm;
+			productReference = 2A8263822B21DB9300DCEC30 /* Alarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A82637A2B21DB9300DCEC30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2A8263812B21DB9300DCEC30 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 2A82637D2B21DB9300DCEC30 /* Build configuration list for PBXProject "Alarm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A8263792B21DB9300DCEC30;
+			productRefGroup = 2A8263832B21DB9300DCEC30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A8263812B21DB9300DCEC30 /* Alarm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A8263802B21DB9300DCEC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3BB2D22B3015FC001765E4 /* Ping1.mp3 in Resources */,
+				2A3BB2D32B3015FC001765E4 /* Ping2.mp3 in Resources */,
+				2A3BB2DD2B30162C001765E4 /* EarlyRiser.mp3 in Resources */,
+				2A3BB2DE2B30162C001765E4 /* Daybreak.mp3 in Resources */,
+				2A3BB2D82B30160C001765E4 /* MorningBirds.mp3 in Resources */,
+				2A8263922B21DB9500DCEC30 /* LaunchScreen.storyboard in Resources */,
+				2A82638F2B21DB9500DCEC30 /* Assets.xcassets in Resources */,
+				2A3BB2D02B3015FC001765E4 /* Happyday.mp3 in Resources */,
+				2A3BB2D42B3015FC001765E4 /* Softchime.mp3 in Resources */,
+				2A82638D2B21DB9300DCEC30 /* Main.storyboard in Resources */,
+				2A3BB2D72B30160C001765E4 /* Freshstart.mp3 in Resources */,
+				2A3BB2D12B3015FC001765E4 /* Auratone.mp3 in Resources */,
+				2A3BB2DC2B30162C001765E4 /* SlowMorning.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		014CD58824DD81496630DD5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8399F2BB77FD72BFAACFE740 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alarm/Pods-Alarm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alarm/Pods-Alarm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alarm/Pods-Alarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A82637E2B21DB9300DCEC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3BB2C32B2AFBBB001765E4 /* Scheduler.swift in Sources */,
+				2A3BB2C82B2EE158001765E4 /* MediaVC.swift in Sources */,
+				2A3BB2E32B31B519001765E4 /* RecorderVC.swift in Sources */,
+				2A8263A72B233A1700DCEC30 /* AlarmAddEditVC.swift in Sources */,
+				2A8263A92B245A1800DCEC30 /* WeekdaysViewController.swift in Sources */,
+				2A8263A12B23161800DCEC30 /* AlarmList+coredata.swift in Sources */,
+				2A82639F2B2315DD00DCEC30 /* CoreDataStack.swift in Sources */,
+				2A82638A2B21DB9300DCEC30 /* ViewController.swift in Sources */,
+				2A3BB2E52B32E24D001765E4 /* RecordingsCell.swift in Sources */,
+				2A8263862B21DB9300DCEC30 /* AppDelegate.swift in Sources */,
+				2A8263A32B23165D00DCEC30 /* AlarmList.swift in Sources */,
+				2A8263AD2B26E65100DCEC30 /* AlarmInfo.swift in Sources */,
+				2A8263AB2B26E27F00DCEC30 /* LabelEditVC.swift in Sources */,
+				2A3BB2CA2B2EE31B001765E4 /* CategoryCell.swift in Sources */,
+				2A3BB2E12B30174B001765E4 /* Global.swift in Sources */,
+				2A82639A2B22EC2B00DCEC30 /* AlarmListCell.swift in Sources */,
+				2A82639D2B23132F00DCEC30 /* AlarmList.xcdatamodeld in Sources */,
+				2A8263A52B2330C100DCEC30 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A82638B2B21DB9300DCEC30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A82638C2B21DB9300DCEC30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A8263902B21DB9500DCEC30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A8263912B21DB9500DCEC30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A8263942B21DB9500DCEC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A8263952B21DB9500DCEC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A8263972B21DB9500DCEC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BF9A708A22F7D81BC3E3DD4 /* Pods-Alarm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4J997S4MTT;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alarm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Alarm;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabani.Alarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2A8263982B21DB9500DCEC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB91CDA0D7ADF65645F814E7 /* Pods-Alarm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4J997S4MTT;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alarm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Alarm;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabani.Alarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A82637D2B21DB9300DCEC30 /* Build configuration list for PBXProject "Alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8263942B21DB9500DCEC30 /* Debug */,
+				2A8263952B21DB9500DCEC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A8263962B21DB9500DCEC30 /* Build configuration list for PBXNativeTarget "Alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8263972B21DB9500DCEC30 /* Debug */,
+				2A8263982B21DB9500DCEC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A82639B2B23132F00DCEC30 /* AlarmList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A82639C2B23132F00DCEC30 /* AlarmList.xcdatamodel */,
+			);
+			currentVersion = 2A82639C2B23132F00DCEC30 /* AlarmList.xcdatamodel */;
+			path = AlarmList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2A82637A2B21DB9300DCEC30 /* Project object */;
+}
