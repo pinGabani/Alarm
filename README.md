@@ -1,4 +1,4 @@
-# alarm
+# Alarm
 
 This is a basic alarm app with core features
 - List of all created alarms
