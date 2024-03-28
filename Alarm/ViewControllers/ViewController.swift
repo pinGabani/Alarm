@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         alarmList = AlarmList.fetch()
         tableView.reloadData()
-        tableView.tableFooterView = UIView()
     }
     
     @IBAction func addAlarmClicked(_ sender: Any) {
